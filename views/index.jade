@@ -1,0 +1,272 @@
+extends layout
+block content
+	.container-fluid.bg-primary.met-index-body
+		.container
+			.row.text-center
+				h1 MetInfo
+				h2 最好用的企业建站系统
+				img(src="imgs/indextop.png" alt="big").img-responsive.center-block
+	.container-fluid.met-index-body
+		.container
+			.row
+				.col-md-5.middle.col-sm-12
+					h3 直观、简介 
+					h3 轻松愉悦的后台管理
+					p.first MetInfo 后台的功能划分都是根据用户习惯设计。
+					p 采用极简扁平化界面风格
+					p 不需要任何培训就可以轻松上手
+					a(href="/admin") 去体验后台 &gt;
+				.col-md-7.col-sm-12
+					img(src="imgs/indextop.png").img-responsive.center-block
+
+	.container-fluid.met-index-body.bg-danger
+		.container
+			.row.text-center
+					h3 企业官网
+					h3 功能足够满足所需
+					p 文章、产品、表单、多语言...为企业而设计的60多项功能
+					p 内容发布和维护运营更加得心应手。
+					a(href="/") MetInfo 功能全览 &gt;
+				.col-sm-12.banner-position
+					//- iphone轮播
+					.iphone_banner
+						img(src="/imgs/mobile-bg.png").img-responsive.center-block
+						#carousel-example-generic.carousel.slide.iphone_position
+							.carousel-inner
+								.item.active
+									img(src="/imgs/mobile1.jpg")
+								.item
+									img(src="/imgs/mobile2.jpg")
+								.item
+									img(src="/imgs/mobile3.jpg")
+								.item
+									img(src="/imgs/mobile4.jpg")
+								.item
+									img(src="/imgs/mobile5.jpg")
+								.item
+									img(src="/imgs/mobile6.jpg")
+
+					//- PC轮播
+					.pc_banner
+						img(src="/imgs/pc-bg.png").img-responsive.center-block
+						#carousel-example-generic.carousel.slide.pc_position
+							.carousel-inner
+								.item.active
+									img(src="/imgs/pc1.jpg").img-responsive.center-block
+								.item
+									img(src="/imgs/pc2.jpg").img-responsive.center-block
+								.item
+									img(src="/imgs/pc3.jpg").img-responsive.center-block
+								.item
+									img(src="/imgs/pc4.jpg").img-responsive.center-block
+								.item
+									img(src="/imgs/pc5.jpg").img-responsive.center-block
+								.item
+									img(src="/imgs/pc6.jpg").img-responsive.center-block
+	.container-fluid.met-index-body.bg-danger
+		.container
+			.row.text-center.imgPadding
+					h3 应用商店
+					p 如果功能全面的 MetInfo 依旧无法满足你。
+					p 应用商店或许能够给您惊喜。
+					.col-sm-4.text-left.imgList
+						.group-img
+							.col-xs-4
+								a(href="#")
+									img(src="imgs/1473129338.png").img-responsive
+							.col-xs-8
+								h4 商城模块
+								span 一款非常适合用于企业电子商务 B2C 的营销型功能模块。擦用
+						.group-img
+							.col-xs-4
+								a(href="#")
+									img(src="imgs/1473131229.png").img-responsive
+							.col-xs-8
+								h4 应用安装助手
+								span MetInfo应用开发必备工具！能够快速安装应用，不必每次安装
+						.group-img
+							.col-xs-4
+								a(href="#")
+									img(src="imgs/1473130773.png").img-responsive
+							.col-xs-8
+								h4 公交班车路线
+								span 可自定义显示公交路线/公司班车展示，站点名称、路线、时间排班..
+						.group-img
+							.col-xs-4
+								a(href="#")
+									img(src="imgs/1473131796.png").img-responsive
+							.col-xs-8
+								h4 模版制作助手
+								span 模板制作必备工具！能够在线配置自定义标签，实现灵活且体验好的..
+					.col-sm-4.text-left.imgList
+						.group-img
+							.col-xs-4
+								a(href="#")
+									img(src="imgs/1473130925.png").img-responsive
+							.col-xs-8
+								h4 百度自动推送
+								span 自动推送 URL 到百度，加快百度蜘蛛对网站的抓取速度!
+						.group-img
+							.col-xs-4
+								a(href="#")
+									img(src="imgs/1473131513.png").img-responsive
+							.col-xs-8
+								h4 邮件群发
+								span 可以一键获取系统所有会员的邮箱账号，可同时对多个邮箱账号发送..
+						.group-img
+							.col-xs-4
+								a(href="#")
+									img(src="imgs/1473131140.png").img-responsive
+							.col-xs-8
+								h4 上传文件管理
+								span 在线文件管理功能，复制、剪切、粘贴、移动、删除、下载、重命名..
+						.group-img
+							.col-xs-4
+								a(href="#")
+									img(src="imgs/1488511373.png").img-responsive
+							.col-xs-8
+								h4 网站通知
+								span 在右下角以文字方框显示网站的重要性通知。可自定义背景与文字的..
+					.col-sm-4.text-left.imgList
+						.group-img
+							.col-xs-4
+								a(href="#")
+									img(src="imgs/1473130573.png").img-responsive
+							.col-xs-8
+								h4 防伪码
+								span 通过防伪码系统可对产品生成加密的产品信息，可获知该产品的一连..
+						.group-img
+							.col-xs-4
+								a(href="#")
+									img(src="imgs/1473131288.png").img-responsive
+							.col-xs-8
+								h4 仿真QQ弹窗
+								span 在网站页面上显示仿真 QQ 弹窗，有效提升访客沟通几率。多样..
+						.group-img
+							.col-xs-4
+								a(href="#")
+									img(src="imgs/1473131560.png").img-responsive
+							.col-xs-8
+								h4 产品重发
+								span 批量更新产品、文章发布时间，让网站保持活力快捷复制产品、文章..
+						.group-img
+							.col-xs-4
+								a(href="#")
+									img(src="imgs/1487221021.png").img-responsive
+							.col-xs-8
+								h4 一键导入微信文章
+								span 只用输入微信公众号文章链接，即可导入文章内容到网站。
+					a(href="/") MetInfo 功能全览 &gt;
+	.container-fluid.met-index-body
+		.container
+			.row.text-center.imgPadding
+					h3 先于时代的
+					h3 响应式网站设计
+					p 只能适应用户设备的屏幕设计
+					p 「电脑、平板、手机、微官网」同样美好
+					p 拉动缩放浏览器到不同尺寸体验响应式网站的魅力
+					a(href="/") 观看影片
+					a(href="/") 多种风格&gt;
+					img(src="imgs/met-index-mb.png").img-responsive.center-block
+	.container-fluid.met-index-body.bg-danger
+		#carousel-example-generic.carousel.slide
+			ol.carousel-indicators
+				li(data-target="#carousel-example-generic" data-slide-to="0").acitve
+				li(data-target="#carousel-example-generic" data-slide-to="1")
+				li(data-target="#carousel-example-generic" data-slide-to="2")
+			.carousel-inner
+				.item.active
+					.container.imgHeight
+						h3 SEO优化
+						h3 让网站具有营销价值
+						p 谁都希望能在百度搜索到自己的公司，利用 MetInfo 非常容
+						p 易做到这一点，但这只是第一步，你还可以利用MetInfo的
+						p SEO优化功能达到更好的排名效果。
+						img(src="/imgs/seo.png").img-responsive.center-block
+				.item
+					.container.imgHeight
+						h3 静态页面
+						h3 简介的网址URL
+						p MetInfo拥有同时也具备「伪静态」功能，同时也具备「伪
+						p 静态」功能，并且每个页面的静态名称都可以自定义
+						p 人们普遍认为简洁的网址结构(如静态页面)对SEO优化有帮助。
+						img(src="/imgs/static.png").img-responsive.center-block
+				.item
+					.container.imgHeight.text-3
+						.lt
+							h3 自定义
+							h3 SEO 参数
+							p 每个页面都可以自定义标题(title) 关键词(keyword)简短
+							p 描述(description)
+							p 为了让你省心，减少过多的重复工作，还可以设定标题规则，
+							p 发布的内容自动按规则设置好。页面描述也能够根据内容自动截取。
+						img(src="/imgs/para.png").img-responsive.rt
+			a.left.carousel-control(href="#carousel-example-generic" data-slide="prev")
+				span.glyphicon.glyphicon-chevron-left(aria-hidden="true")
+			a.right.carousel-control(href="#carousel-example-generic" data-slide="next")
+				span.glyphicon.glyphicon-chevron-right(aria-hidden="true")
+	.container-fluid.met-index-body
+		.container
+			.row.text-center.cms
+				h3 开源CMS
+				p.text-center 也许是国内目前最专注的 CMS 厂商
+				p.text-center 八年来一直在为提供更高用的 MetInfo 而努力
+				.col-sm-4
+					span.glyphicon.glyphicon-off.img-circle
+					h4.text-center 源码开放
+					p.text-center 可以自由部署在任何服务器
+					p.text-center 文档齐全，轻松扩展开发
+				.col-sm-4
+					span.glyphicon.glyphicon-ok.img-circle
+					h4.text-center 永久免费
+					p.text-center 下载安装就可以上线网站
+					p.text-center 网站后台免费在线升级轻松便捷
+				.col-sm-4
+					span.glyphicon.glyphicon-plus-sign.img-circle
+					h4.text-center 安全稳定
+					p.text-center 定期发布新版本
+					p.text-center 自动更新安全补丁
+	.container-fluid.choice
+		.container
+			.row.text-center
+				h3 超过 40 万家优秀企业选择
+				p 新创乃至上市公司、政府、外贸企业都有 MetInfo 的用户
+				p MetInfo 的用户遍布全国各地(包括台湾、香港)以及海外华侨
+	.container-fluid.evaluate.bg-danger
+		.container
+			.row
+				h4.text-center 用户评价
+				.col-xs-12
+					.user-text
+						.user-name.clearfix
+							img(src='imgs/thumb.jpg').img-responsive.center-block.img-circle.pull-left
+							span.pull-left 鑫
+						p MetInfo 我用了 5 年了！之前也有网站用过这套系统，这次买了模板和授权开了新网站，整体使用起来非常方便，前台模板风格比较喜欢，后台操作也很便捷。对于企业来说，使用这套系统，能够节省很大的前期成本和后期维护成本。祝愿 MetInfo 越做越好。
+				.col-xs-12
+					.user-text
+						.user-name.clearfix
+							img(src='imgs/thumb.jpg').img-responsive.center-block.img-circle.pull-left
+							span.pull-left 鑫
+						p MetInfo 我用了 5 年了！之前也有网站用过这套系统，这次买了模板和授权开了新网站，整体使用起来非常方便，前台模板风格比较喜欢，后台操作也很便捷。对于企业来说，使用这套系统，能够节省很大的前期成本和后期维护成本。祝愿 MetInfo 越做越好。
+				.col-xs-12
+					.user-text
+						.user-name.clearfix
+							img(src='imgs/thumb.jpg').img-responsive.center-block.img-circle.pull-left
+							span.pull-left 鑫
+						p MetInfo 我用了 5 年了！之前也有网站用过这套系统，这次买了模板和授权开了新网站，整体使用起来非常方便，前台模板风格比较喜欢，后台操作也很便捷。对于企业来说，使用这套系统，能够节省很大的前期成本和后期维护成本。祝愿 MetInfo 越做越好。
+				.col-xs-12
+					.user-text
+						.user-name.clearfix
+							img(src='imgs/thumb.jpg').img-responsive.center-block.img-circle.pull-left
+							span.pull-left 鑫
+						p MetInfo 我用了 5 年了！之前也有网站用过这套系统，这次买了模板和授权开了新网站，整体使用起来非常方便，前台模板风格比较喜欢，后台操作也很便捷。对于企业来说，使用这套系统，能够节省很大的前期成本和后期维护成本。祝愿 MetInfo 越做越好。
+				.col-xs-12.change.text-center
+					a(href="javascrip:;") &lt;
+					a(href="javascrip:;") &gt;
+	.container-fluid.downloadStart
+		.container
+			.row
+				a(href="/") 免费开始
+				p.text-center 企业官网「轻松搭建」
+	//- footer信息
+	include footer

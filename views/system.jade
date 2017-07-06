@@ -1,0 +1,833 @@
+doctype
+html
+	head
+		meta(charset="utf-8")
+		meta(name="viewport" content="width=device-width, initial-scale=1")
+		title #{title}
+		link(href="../bootstrap/dist/css/bootstrap.min.css" type="text/css" rel="stylesheet")
+		link(href="../css/css.css" type="text/css" rel="stylesheet")
+		script(src="../jquery/dist/jquery.min.js" type="text/javascript")
+		script(src="../bootstrap/dist/js/bootstrap.min.js" type="text/javascript")
+		link(href="../summernote/dist/summernote.css" type="text/css" rel="stylesheet")
+		script(src="../summernote/dist/summernote.min.js" type="text/javascript")
+		script(src="../js/js.js" type="text/javascript")
+	body.system
+		.container-fluid.bg-primary.system-header
+			.container
+				.row
+					.col-xs-12
+						h1.lt 后台管理操作系统
+						ul.rt
+							li
+								a(href="#").active 首页
+							li
+								a(href="#") 系统设置
+							li
+								a(href="#") 数据维护
+							li
+								a(href="#") 报告管理
+							li
+								a(href="#") 帮助
+		.container-fluid
+			.container
+				.row
+					.col-xs-3.system-left
+						.admin-list
+							.project-list.lt
+								b 项目组
+							.admin-name.lt
+								span.admin-name-value 张三
+								span.call 工程师
+								p 欢迎登陆!
+						ul.system-left-switch
+							li
+								a(href="#system-template").active
+									span.glyphicon.glyphicon-align-left
+									b 模版后台管理系统
+							li
+								a(href="#system-case")
+									span.glyphicon.glyphicon-align-center
+									b 案例后台管理系统
+							li
+								a(href="#system-help")
+									span.glyphicon.glyphicon-align-right
+									b 帮助后台管理系统
+							li
+								a(href="#system-bbs")
+									span.glyphicon.glyphicon-align-justify
+									b 社区后台管理系统
+							li
+								a(href="#system-user")
+									span.glyphicon.glyphicon-list
+									b 用户后台管理系统
+						.system-exit
+							a(href="javascript:;")
+								span.glyphicon.glyphicon-remove-circle
+								b 退出后台管理系统
+					.col-xs-9.system-right
+						//- 模版后台管理系统
+						p 您当前位置：
+							span.page-postion 首页 &gt; 
+							span.page-syetem 模版后台管理系统
+							span.time.rt 2014年06月30日 16:18:10 星期一
+						.system-right-wrap
+							.system-template
+								.system-head.system-head-template
+									ul
+										li
+											a(href="#").active 添加模版
+												input(type="file" multiple="multiple")
+										li
+											a(href="#") 修改模版
+										li
+											a(href="#") 删除模版
+								.system-body.system-body-template
+									//- 添加模版
+									.add-template
+										.system-body-list
+											.system-body-content
+												dl
+													dt 模版1
+													dd
+														.system-form-group
+															label(for="title-1") 模版标题：
+															input(type="text" placeholder="模版标题" name="title-1")
+														.system-form-group
+															label(for="price-1") 模版价格：
+															input(type="text" placeholder="￥" name="price-1")
+														.system-form-group
+															label(for="connect-1") 图片连接：
+															input(type="text" placeholder="/imgs" name="connect-1")
+														.system-form-group
+															label(for="exhibition-1") 网站展示：
+															input(type="text" placeholder="模版展示" name="exhibition-1")
+														.system-form-group
+															label(for="address-1") 网站地址：
+															input(type="text" placeholder="网站地址" name="address-1")
+														.system-form-group
+															label(for="service-1") 咨询客服：
+															input(type="text" placeholder="咨询客服" name="service-1")
+											.system-body-content
+												dl
+													dt 模版2
+													dd
+														.system-form-group
+															label(for="title-1") 模版标题：
+															input(type="text" placeholder="模版标题" name="title-1")
+														.system-form-group
+															label(for="price-1") 模版价格：
+															input(type="text" placeholder="￥" name="price-1")
+														.system-form-group
+															label(for="connect-1") 图片连接：
+															input(type="text" placeholder="/imgs" name="connect-1")
+														.system-form-group
+															label(for="exhibition-1") 网站展示：
+															input(type="text" placeholder="模版展示" name="exhibition-1")
+														.system-form-group
+															label(for="address-1") 网站地址：
+															input(type="text" placeholder="网站地址" name="address-1")
+														.system-form-group
+															label(for="service-1") 咨询客服：
+															input(type="text" placeholder="咨询客服" name="service-1")
+											.upload-file
+												input(type="button" value="上传")
+									//- 修改模版
+									.add-template.hidden
+										.system-body-list
+											.system-body-content
+													dl
+														dt 修改模版1
+														dd
+															.system-form-group
+																label(for="title-1") 模版标题：
+																input(type="text" placeholder="模版标题" name="title-1")
+															.system-form-group
+																label(for="price-1") 模版价格：
+																input(type="text" placeholder="￥" name="price-1")
+															.system-form-group
+																label(for="connect-1") 图片连接：
+																input(type="text" placeholder="/imgs" name="connect-1")
+															.system-form-group
+																label(for="exhibition-1") 网站展示：
+																input(type="text" placeholder="模版展示" name="exhibition-1")
+															.system-form-group
+																label(for="address-1") 网站地址：
+																input(type="text" placeholder="网站地址" name="address-1")
+															.system-form-group
+																label(for="service-1") 咨询客服：
+																input(type="text" placeholder="咨询客服" name="service-1")
+												.system-body-content
+													dl
+														dt 修改模版2
+														dd
+															.system-form-group
+																label(for="title-1") 模版标题：
+																input(type="text" placeholder="模版标题" name="title-1")
+															.system-form-group
+																label(for="price-1") 模版价格：
+																input(type="text" placeholder="￥" name="price-1")
+															.system-form-group
+																label(for="connect-1") 图片连接：
+																input(type="text" placeholder="/imgs" name="connect-1")
+															.system-form-group
+																label(for="exhibition-1") 网站展示：
+																input(type="text" placeholder="模版展示" name="exhibition-1")
+															.system-form-group
+																label(for="address-1") 网站地址：
+																input(type="text" placeholder="网站地址" name="address-1")
+															.system-form-group
+																label(for="service-1") 咨询客服：
+																input(type="text" placeholder="咨询客服" name="service-1")
+											.modify-file
+												input(type="button" value="修改")
+									//- 删除模版
+									.add-template.hidden
+										.system-body-list
+											.system-body-content
+												table.table.table-hover.delete
+													tr
+														th 选择
+														th id
+														th 信息
+													tr
+														td
+															a(href="javascript:;")
+														td 1
+														td 
+															b 模版标题：
+															span 模版标题
+															b 模版价格：
+															span ￥
+															b 网站展示：
+															span 模版展示
+															b 网站地址：
+															span 网站地址
+													tr
+														td
+															a(href="javascript:;")
+														td 2
+														td 
+															b 模版标题：
+															span 模版标题
+															b 模版价格：
+															span ￥
+															b 网站展示：
+															span 模版展示
+															b 网站地址：
+															span 网站地址
+													tr
+														td
+															a(href="javascript:;")
+														td 3
+														td 
+															b 模版标题：
+															span 模版标题
+															b 模版价格：
+															span ￥
+															b 网站展示：
+															span 模版展示
+															b 网站地址：
+															span 网站地址
+													tr
+														td
+															a(href="javascript:;")
+														td 4
+														td 
+															b 模版标题：
+															span 模版标题
+															b 模版价格：
+															span ￥
+															b 网站展示：
+															span 模版展示
+															b 网站地址：
+															span 网站地址
+
+											.delete-file
+												input(type="button" value="删除")
+
+							//- 案例后台管理系统
+							.system-case.hidden
+								.system-head.system-head-case
+									ul
+										li
+											a(href="#").active 添加模版
+												input(type="file" multiple="multiple")
+										li
+											a(href="#") 修改模版
+										li
+											a(href="#") 删除模版
+								.system-body.system-body-case
+									//- 添加模版
+									.add-template
+										.system-body-list
+											.system-body-content
+												dl
+													dt 模版1
+													dd
+														.system-form-group
+															label(for="title-1") 模版标题：
+															input(type="text" placeholder="模版标题" name="title-1")
+														.system-form-group
+															label(for="price-1") 模版价格：
+															input(type="text" placeholder="￥" name="price-1")
+														.system-form-group
+															label(for="connect-1") 图片连接：
+															input(type="text" placeholder="/imgs" name="connect-1")
+														.system-form-group
+															label(for="exhibition-1") 网站展示：
+															input(type="text" placeholder="模版展示" name="exhibition-1")
+														.system-form-group
+															label(for="address-1") 网站地址：
+															input(type="text" placeholder="网站地址" name="address-1")
+														.system-form-group
+															label(for="service-1") 咨询客服：
+															input(type="text" placeholder="咨询客服" name="service-1")
+											.system-body-content
+												dl
+													dt 模版2
+													dd
+														.system-form-group
+															label(for="title-1") 模版标题：
+															input(type="text" placeholder="模版标题" name="title-1")
+														.system-form-group
+															label(for="price-1") 模版价格：
+															input(type="text" placeholder="￥" name="price-1")
+														.system-form-group
+															label(for="connect-1") 图片连接：
+															input(type="text" placeholder="/imgs" name="connect-1")
+														.system-form-group
+															label(for="exhibition-1") 网站展示：
+															input(type="text" placeholder="模版展示" name="exhibition-1")
+														.system-form-group
+															label(for="address-1") 网站地址：
+															input(type="text" placeholder="网站地址" name="address-1")
+														.system-form-group
+															label(for="service-1") 咨询客服：
+															input(type="text" placeholder="咨询客服" name="service-1")
+											.upload-file
+												input(type="button" value="上传")
+									//- 修改模版
+									.add-template.hidden
+										.system-body-list
+											.system-body-content
+													dl
+														dt 修改模版1
+														dd
+															.system-form-group
+																label(for="title-1") 模版标题：
+																input(type="text" placeholder="模版标题" name="title-1")
+															.system-form-group
+																label(for="price-1") 模版价格：
+																input(type="text" placeholder="￥" name="price-1")
+															.system-form-group
+																label(for="connect-1") 图片连接：
+																input(type="text" placeholder="/imgs" name="connect-1")
+															.system-form-group
+																label(for="exhibition-1") 网站展示：
+																input(type="text" placeholder="模版展示" name="exhibition-1")
+															.system-form-group
+																label(for="address-1") 网站地址：
+																input(type="text" placeholder="网站地址" name="address-1")
+															.system-form-group
+																label(for="service-1") 咨询客服：
+																input(type="text" placeholder="咨询客服" name="service-1")
+												.system-body-content
+													dl
+														dt 修改模版2
+														dd
+															.system-form-group
+																label(for="title-1") 模版标题：
+																input(type="text" placeholder="模版标题" name="title-1")
+															.system-form-group
+																label(for="price-1") 模版价格：
+																input(type="text" placeholder="￥" name="price-1")
+															.system-form-group
+																label(for="connect-1") 图片连接：
+																input(type="text" placeholder="/imgs" name="connect-1")
+															.system-form-group
+																label(for="exhibition-1") 网站展示：
+																input(type="text" placeholder="模版展示" name="exhibition-1")
+															.system-form-group
+																label(for="address-1") 网站地址：
+																input(type="text" placeholder="网站地址" name="address-1")
+															.system-form-group
+																label(for="service-1") 咨询客服：
+																input(type="text" placeholder="咨询客服" name="service-1")
+											.modify-file
+												input(type="button" value="修改")
+									//- 删除模版
+									.add-template.hidden
+										.system-body-list
+											.system-body-content
+												table.table.table-hover.delete
+													tr
+														td 选择
+														td id
+														td 信息
+													tr
+														td
+															a(href="javascript:;")
+														td 1
+														td 
+															b 模版标题：
+															span 模版标题
+															b 模版价格：
+															span ￥
+															b 网站展示：
+															span 模版展示
+															b 网站地址：
+															span 网站地址
+													tr
+														td
+															a(href="javascript:;")
+														td 2
+														td 
+															b 模版标题：
+															span 模版标题
+															b 模版价格：
+															span ￥
+															b 网站展示：
+															span 模版展示
+															b 网站地址：
+															span 网站地址
+													tr
+														td
+															a(href="javascript:;")
+														td 3
+														td 
+															b 模版标题：
+															span 模版标题
+															b 模版价格：
+															span ￥
+															b 网站展示：
+															span 模版展示
+															b 网站地址：
+															span 网站地址
+													tr
+														td
+															a(href="javascript:;")
+														td 4
+														td 
+															b 模版标题：
+															span 模版标题
+															b 模版价格：
+															span ￥
+															b 网站展示：
+															span 模版展示
+															b 网站地址：
+															span 网站地址
+
+											.delete-file
+												input(type="button" value="删除")
+							
+							//- 帮助后台管理系统
+							.system-help.hidden
+								.system-head.system-head-help
+									ul
+										li
+											a(href="#").active 添加帮助
+										li
+											a(href="#") 修改帮助
+										li
+											a(href="#") 删除帮助
+								.system-body.system-body-help
+									//- 添加帮助
+									.add-template
+										.system-body-list
+											.system-body-content
+												.help-from-group.clearfix
+													.help-from-group-header
+														label 选择分类：
+														span.choice-list &lt;-- 选择内容 --&gt;
+													ul
+														li
+															a('javascript:;') 新手建站必读
+														li
+															a('javascript:;') 网站配置
+														li
+															a('javascript:;') 网站内容完善
+														li
+															a('javascript:;') SEO优化设置
+														li
+															a('javascript:;') 网站运营推广
+														li
+															a('javascript:;') MetInfo常见问题
+												.help-from-group
+													label 文章标题：
+													input(type="text" placeholder="请输入文章标题")
+												.help-from-group
+													label 文章内容
+													#summernote-1  
+										.upload-file
+												input(type="button" value="发表")
+									//- 修改帮助
+									.add-template.hidden
+										.system-body-list
+											.system-body-content
+												.help-from-group.clearfix
+													.help-from-group-header
+														label 选择分类：
+														span.choice-list &lt;-- 选择内容 --&gt;
+													ul
+														li
+															a('javascript:;') 新手建站必读
+														li
+															a('javascript:;') 网站配置
+														li
+															a('javascript:;') 网站内容完善
+														li
+															a('javascript:;') SEO优化设置
+														li
+															a('javascript:;') 网站运营推广
+														li
+															a('javascript:;') MetInfo常见问题
+												.help-from-group
+													label 文章标题：
+													input(type="text" placeholder="请输入文章标题")
+												.help-from-group
+													label 文章内容
+													#summernote-2  
+										.upload-file
+												input(type="button" value="修改")
+									//- 删除帮助
+									.add-template.hidden
+										.system-body-list
+											.system-body-content
+												dl
+													dt 新手建站必读
+													dd
+														a(href="javascript")
+															|网站建设需要的资料
+														span.glyphicon.glyphicon-remove-sign
+													dd
+														a(href="javascript")
+															|安装MetInfo
+														span.glyphicon.glyphicon-remove-sign
+													dd
+														a(href="javascript")
+															|如何在网站上添加备案号？
+														span.glyphicon.glyphicon-remove-sign
+													dd
+														a(href="javascript")
+															|新手网站搭建教程
+														span.glyphicon.glyphicon-remove-sign
+													dd
+														a(href="javascript")
+															|如何本地安装MetInfo网站
+														span.glyphicon.glyphicon-remove-sign
+													dd
+														a(href="javascript")
+															|如何注册域名
+														span.glyphicon.glyphicon-remove-sign
+													dd
+														a(href="javascript")
+															|网站由哪些部分组成？
+														span.glyphicon.glyphicon-remove-sign
+													dd
+														a(href="javascript")
+															|如何选择合适的域名
+														span.glyphicon.glyphicon-remove-sign
+													dd
+														a(href="javascript")
+															|怎么操作解析绑定？
+														span.glyphicon.glyphicon-remove-sign
+													dd
+														a(href="javascript")
+															|怎样操作网站备案？
+														span.glyphicon.glyphicon-remove-sign
+													dd
+														a(href="javascript")
+															|FTP是什么，怎么用？
+														span.glyphicon.glyphicon-remove-sign
+												dl
+													dt 网站配置
+													dd
+														a(href="javascript:;")
+															|MetInfo 简易使用帮助在线文档
+														span.glyphicon.glyphicon-remove-sign
+													dd
+														a(href="javascript:;")
+															|网站基本信息设置
+														span.glyphicon.glyphicon-remove-sign
+													dd
+														a(href="javascript:;")
+															|如何设置网站栏目？
+														span.glyphicon.glyphicon-remove-sign
+													dd
+														a(href="javascript:;")
+															|怎么添加和管理多个语言网站？
+														span.glyphicon.glyphicon-remove-sign
+													dd
+														a(href="javascript:;")
+															|图片水印设置
+														span.glyphicon.glyphicon-remove-sign
+													dd
+														a(href="javascript:;")
+															|如何设置网站邮件发件箱
+														span.glyphicon.glyphicon-remove-sign
+													dd
+														a(href="javascript:;")
+															|网站外观设置（模板设置）
+														span.glyphicon.glyphicon-remove-sign
+													dd
+														a(href="javascript:;")
+															|如何设置手机网站？
+														span.glyphicon.glyphicon-remove-sign
+													dd
+														a(href="javascript:;")
+															|如何配置精美网站
+														span.glyphicon.glyphicon-remove-sign
+
+							//- 社区后台管理系统
+							.system-bbs.hidden
+								.system-head.system-head-bbs
+									ul
+										li
+											a(href="#").active 删除推荐
+										li
+											a(href="#") 删除最新
+										li
+											a(href="#") 删除热门
+										li
+											a(href="#") 删除等待回复
+								.system-body.system-body-bbs
+									.add-template
+										.system-body-list
+											.system-body-content
+												.content-text
+													strong 首页如何新增产品模块？
+													span.glyphicon.glyphicon-remove-sign
+												.content-text
+													strong 首页如何新增产品模块？
+													span.glyphicon.glyphicon-remove-sign
+												.content-text
+													strong 首页如何新增产品模块？
+													span.glyphicon.glyphicon-remove-sign
+												.content-text
+													strong 首页如何新增产品模块？
+													span.glyphicon.glyphicon-remove-sign
+												.content-text
+													strong 首页如何新增产品模块？
+													span.glyphicon.glyphicon-remove-sign
+												.content-text
+													strong 首页如何新增产品模块？
+													span.glyphicon.glyphicon-remove-sign
+									.add-template.hidden
+										.system-body-list
+											.system-body-content
+												.content-text
+													strong 自定义表单设置（反馈系统）
+													span.glyphicon.glyphicon-remove-sign
+												.content-text
+													strong 自定义表单设置（反馈系统）
+													span.glyphicon.glyphicon-remove-sign
+												.content-text
+													strong 自定义表单设置（反馈系统）
+													span.glyphicon.glyphicon-remove-sign
+												.content-text
+													strong 自定义表单设置（反馈系统）
+													span.glyphicon.glyphicon-remove-sign
+												.content-text
+													strong 自定义表单设置（反馈系统）
+													span.glyphicon.glyphicon-remove-sign
+												.content-text
+													strong 自定义表单设置（反馈系统）
+													span.glyphicon.glyphicon-remove-sign
+									.add-template.hidden
+										.system-body-list
+											.system-body-content
+												.content-text
+													strong 网站换模板之后能不能恢复之前的内容？？
+													span.glyphicon.glyphicon-remove-sign
+												.content-text
+													strong 网站换模板之后能不能恢复之前的内容？？
+													span.glyphicon.glyphicon-remove-sign
+												.content-text
+													strong 网站换模板之后能不能恢复之前的内容？？
+													span.glyphicon.glyphicon-remove-sign
+												.content-text
+													strong 网站换模板之后能不能恢复之前的内容？？
+													span.glyphicon.glyphicon-remove-sign
+												.content-text
+													strong 网站换模板之后能不能恢复之前的内容？？
+													span.glyphicon.glyphicon-remove-sign
+												.content-text
+													strong 网站换模板之后能不能恢复之前的内容？？
+													span.glyphicon.glyphicon-remove-sign
+									.add-template.hidden
+										.system-body-list
+											.system-body-content
+												.content-text
+													strong 我之前充值了短信，之后网站重装了，现在显示没有金额，还是用这个帐号充值的
+													span.glyphicon.glyphicon-remove-sign
+												.content-text
+													strong 我之前充值了短信，之后网站重装了，现在显示没有金额，还是用这个帐号充值的
+													span.glyphicon.glyphicon-remove-sign
+												.content-text
+													strong 我之前充值了短信，之后网站重装了，现在显示没有金额，还是用这个帐号充值的
+													span.glyphicon.glyphicon-remove-sign
+												.content-text
+													strong 我之前充值了短信，之后网站重装了，现在显示没有金额，还是用这个帐号充值的
+													span.glyphicon.glyphicon-remove-sign
+												.content-text
+													strong 我之前充值了短信，之后网站重装了，现在显示没有金额，还是用这个帐号充值的
+													span.glyphicon.glyphicon-remove-sign
+												.content-text
+													strong 我之前充值了短信，之后网站重装了，现在显示没有金额，还是用这个帐号充值的
+													span.glyphicon.glyphicon-remove-sign
+							
+							//- 用户后台管理系统
+							.system-user.hidden
+								.system-head.system-head-user
+									ul
+										li
+											a(href="#").active 添加用户
+										li
+											a(href="#") 修改用户
+										li
+											a(href="#") 删除用户
+								.system-body.system-body-user
+									.add-template
+										.system-body-list
+											.system-body-content
+												ul.enter-form
+													li
+														label 登陆邮箱:
+														input(type="text")
+													li
+														label 公司名称:
+														input(type="text")
+													li
+														label 密&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;码:
+														input(type="text")
+													li
+														label 确认密码:
+														input(type="text")
+													li
+														a(href="javascript:;").btn.btn-primary 添加
+														a(href="javascript:;").btn.btn-success 删除
+												ul.enter-form
+													li
+														label 登陆邮箱:
+														input(type="text")
+													li
+														label 公司名称:
+														input(type="text")
+													li
+														label 密&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;码:
+														input(type="text")
+													li
+														label 确认密码:
+														input(type="text")
+													li
+														a(href="javascript:;").btn.btn-primary 添加
+														a(href="javascript:;").btn.btn-success 删除
+												ul.enter-form
+													li
+														label 登陆邮箱:
+														input(type="text")
+													li
+														label 公司名称:
+														input(type="text")
+													li
+														label 密&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;码:
+														input(type="text")
+													li
+														label 确认密码:
+														input(type="text")
+													li
+														a(href="javascript:;").btn.btn-primary 添加
+														a(href="javascript:;").btn.btn-success 删除
+									.add-template.hidden
+										.system-body-list
+											.system-body-content
+												ul.enter-form
+													li
+														label 登陆邮箱:
+														input(type="text" value="240173221@qq.com")
+													li
+														label 公司名称:
+														input(type="text" value="海平面设计公司")
+													li
+														label 密&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;码:
+														input(type="text" value="123456789")
+													li
+														a(href="javascript:;").btn.btn-primary 修改
+												ul.enter-form
+													li
+														label 登陆邮箱:
+														input(type="text" value="240173221@qq.com")
+													li
+														label 公司名称:
+														input(type="text" value="海平面设计公司")
+													li
+														label 密&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;码:
+														input(type="text" value="123456789")
+													li
+														a(href="javascript:;").btn.btn-primary 修改
+												ul.enter-form
+													li
+														label 登陆邮箱:
+														input(type="text" value="240173221@qq.com")
+													li
+														label 公司名称:
+														input(type="text" value="海平面设计公司")
+													li
+														label 密&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;码:
+														input(type="text" value="123456789")
+													li
+														a(href="javascript:;").btn.btn-primary 修改
+												ul.enter-form
+													li
+														label 登陆邮箱:
+														input(type="text" value="240173221@qq.com")
+													li
+														label 公司名称:
+														input(type="text" value="海平面设计公司")
+													li
+														label 密&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;码:
+														input(type="text" value="123456789")
+													li
+														a(href="javascript:;").btn.btn-primary 修改
+									.add-template.hidden
+										.system-body-list
+											.system-body-content
+												ul.enter-form
+													li
+														label 登陆邮箱:
+														input(type="text" value="240173221@qq.com")
+													li
+														label 公司名称:
+														input(type="text" value="海平面设计公司")
+													li
+														label 密&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;码:
+														input(type="text" value="123456789")
+													li
+														a(href="javascript:;").btn.btn-primary 删除
+												ul.enter-form
+													li
+														label 登陆邮箱:
+														input(type="text" value="240173221@qq.com")
+													li
+														label 公司名称:
+														input(type="text" value="海平面设计公司")
+													li
+														label 密&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;码:
+														input(type="text" value="123456789")
+													li
+														a(href="javascript:;").btn.btn-primary 删除
+												ul.enter-form
+													li
+														label 登陆邮箱:
+														input(type="text" value="240173221@qq.com")
+													li
+														label 公司名称:
+														input(type="text" value="海平面设计公司")
+													li
+														label 密&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;码:
+														input(type="text" value="123456789")
+													li
+														a(href="javascript:;").btn.btn-primary 删除
+
+
+

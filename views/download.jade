@@ -1,0 +1,47 @@
+extends layout
+block content
+	.container-fluid.text-center.download-entrance
+		.container
+			.row
+				.downloadFile
+					h1 免费下载MetInfo
+					p 超过40万家优秀企业选择
+					p 免费又好用的企业建站系统
+					input(type="button" value="下载MetInfo").btn.btn-primary.btn-lg
+					span 当前版本:5.3.16 / 更新于2017 年 4 月 1 日 / 
+						a(href="/") 历史版本
+				.install
+					h3 安装环境要求
+					p 操作系统: Linux/Unix/Windows
+					p 软件环境: IIS/Apache/Nginx + PHP 5.0 及以上
+					p 本地电脑不宜安装，请安装在合适的网站空间、虚拟主机上
+					a(href="/") 官方推荐主机  &gt;
+	.container-fluid.text-center.messageText
+		.row
+			.col-sm-3
+				.list-1
+					span.glyphicon.glyphicon-asterisk
+					p
+						a(href="/") 更新日志 &gt;
+					span 记录 MetInfo 的成长
+			.col-sm-3
+				.list-2
+					span.glyphicon.glyphicon-adjust
+					p
+						a(href="/") 从这时开始 &gt;
+					span 教你安装和使用 MetInfo
+			.col-sm-3
+				.list-3
+					span.glyphicon.glyphicon-edit
+					p
+						a(href="/") 官方推荐主机 &gt;
+					span 高性价比，自动安装 MetInfo
+			.col-sm-3
+				.list-4
+					span.glyphicon.glyphicon-ok-sign
+					p
+						a(href="/") 商业授权 &gt;
+					span 正版授权，彰显品牌
+
+	//- footer信息
+	include footer

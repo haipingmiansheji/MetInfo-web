@@ -1,0 +1,277 @@
+extends layout
+block content
+	.navbar.help-search.bg-primary
+		.container-fluid
+			.container
+				.collapse.navbar-collapse
+					form.navbar-form.navbar-left
+						.form-group
+							input(type="text" placeholder="搜索问题、话题或人").search
+							span.glyphicon.glyphicon-search
+	//- 问答内容
+	.container-fluid.bg-danger.help-problem
+		.container
+			.row
+				.col-md-9
+					.bbs-banner
+						//- 轮播
+						.carousel.slide#carousel-example-generic(data-ride="carousel")
+							ol.carousel-indicators
+								li(data-target="#carousel-example-generic" data-slide-to="0").active
+								li(data-target="#carousel-example-generic" data-slide-to="1")
+							.carousel-inner(role="listbox")
+								.item.active
+									a(href="#")
+										img(src="imgs/bbs_banner6.png").img-responsive.center-block
+								.item
+									a(href="#")
+										img(src="imgs/bbs_banner7.png").img-responsive.center-block
+							a.left.carousel-control(href="#carousel-example-generic" role="button" data-slide="prev")
+								span.glyphicon.glyphicon-chevron-left(aria-hidden="true")
+								span.sr-only Previous
+							a.right.carousel-control(href="#carousel-example-generic" role="button" data-slide="next")
+								span.glyphicon.glyphicon-chevron-right(aria-hidden="true")
+								span.sr-only Next
+					.new-dynamic
+						.new-header
+							p.lt
+								span.glyphicon.glyphicon-list
+								strong 发现
+							ul
+								li
+									a(href="#") 推荐
+								li
+									a(href="#") 最新
+								li
+									a(href="#") 热门
+								li
+									a(href="#").acitve 等待回复
+						.new-body
+							dl
+								dt
+									a(href="#")
+										img(src="imgs/userImg.jpg").img-responsive.center-block
+								dd
+									p
+										a(href="#") 商桥代码在第三方代码那安装了不好使，怎么办？
+									p.new-text
+										a(href="#").questions 问答交流
+										i ●
+										a(href="#").useEmail 240173221@qq.com
+										span 发起了问题 ●
+											b.attention 1
+											s 人关注 ● 
+											b.reply 0
+											s 个回复 ● 
+											b.browse 7
+											s 次浏览 ● 
+											b.time 50
+											s 分钟前
+										a(href="#").replyMessage 回复
+							dl
+								dt
+									a(href="#")
+										img(src="imgs/userImg.jpg").img-responsive.center-block
+								dd
+									p
+										a(href="#") 商桥代码在第三方代码那安装了不好使，怎么办？
+									p.new-text
+										a(href="#").questions 问答交流
+										i ●
+										a(href="#").useEmail 240173221@qq.com
+										span 发起了问题 ● 
+											b.attention 1
+											s 人关注 ● 
+											b.reply 0
+											s 个回复 ● 
+											b.browse 7
+											s 次浏览 ● 
+											b.time 50
+											s 分钟前
+										a(href="#").replyMessage 回复
+							dl
+								dt
+									a(href="#")
+										img(src="imgs/userImg.jpg").img-responsive.center-block
+								dd
+									p
+										a(href="#") 商桥代码在第三方代码那安装了不好使，怎么办？
+									p.new-text
+										a(href="#").questions 问答交流
+										i ●
+										a(href="#").useEmail 240173221@qq.com
+										span 发起了问题 ● 
+											b.attention 1
+											s 人关注 ● 
+											b.reply 0
+											s 个回复 ● 
+											b.browse 7
+											s 次浏览 ● 
+											b.time 50
+											s 分钟前
+										a(href="#").replyMessage 回复
+							dl
+								dt
+									a(href="#")
+										img(src="imgs/userImg.jpg").img-responsive.center-block
+								dd
+									p
+										a(href="#") 商桥代码在第三方代码那安装了不好使，怎么办？
+									p.new-text
+										a(href="#").questions 问答交流
+										i ●
+										a(href="#").useEmail 240173221@qq.com
+										span 发起了问题 ● 
+											b.attention 1
+											s 人关注 ● 
+											b.reply 0
+											s 个回复 ● 
+											b.browse 7
+											s 次浏览 ● 
+											b.time 50
+											s 分钟前
+										a(href="#").replyMessage 回复
+							dl
+								dt
+									a(href="#")
+										img(src="imgs/userImg.jpg").img-responsive.center-block
+								dd
+									p
+										a(href="#") 商桥代码在第三方代码那安装了不好使，怎么办？
+									p.new-text
+										a(href="#").questions 问答交流
+										i ●
+										a(href="#").useEmail 240173221@qq.com
+										span 发起了问题 ●
+											b.attention 1
+											s 人关注 ● 
+											b.reply 0
+											s 个回复 ● 
+											b.browse 7
+											s 次浏览 ● 
+											b.time 50
+											s 分钟前
+										a(href="#").replyMessage 回复
+				.col-md-3.ltBorder
+					.sidebar
+						.sidebar-header.text-center
+							input(type="button" value="发起问题").btn.btn-primary.btn-lg
+						.sidebar-body
+							.sidebar-message
+								h1 热门话题
+									a(href="#").rt 更多&gt;
+								dl
+									dt
+										a(href="#") 首页如何增加产品栏目
+									dd
+										a(href="#").questions 问答交流
+										span
+											i ●
+											b.reply 2
+											s 个回复
+											i ●
+											b.browse 64
+											s 次浏览
+											i ●
+											b.time 14
+											s 小时前
+								dl
+									dt
+										a(href="#") 首页如何增加产品栏目
+									dd
+										a(href="#").questions 问答交流
+										span
+											i ●
+											b.reply 2
+											s 个回复
+											i ●
+											b.browse 64
+											s 次浏览
+											i ●
+											b.time 14
+											s 小时前
+								dl
+									dt
+										a(href="#") 首页如何增加产品栏目
+									dd
+										a(href="#").questions 问答交流
+										span
+											i ●
+											b.reply 2
+											s 个回复
+											i ●
+											b.browse 64
+											s 次浏览
+											i ●
+											b.time 14
+											s 小时前
+								dl
+									dt
+										a(href="#") 首页如何增加产品栏目
+									dd
+										a(href="#").questions 问答交流
+										span
+											i ●
+											b.reply 2
+											s 个回复
+											i ●
+											b.browse 64
+											s 次浏览
+											i ●
+											b.time 14
+											s 小时前
+								dl
+									dt
+										a(href="#") 首页如何增加产品栏目
+									dd
+										a(href="#").questions 问答交流
+										span
+											i ●
+											b.reply 2
+											s 个回复
+											i ●
+											b.browse 64
+											s 次浏览
+											i ●
+											b.time 14
+											s 小时前
+						.sidebar-bottom
+							h1 热门用户
+									a(href="#").rt 更多&gt;
+							dl
+								dt
+									a(href="#")
+										img(src="imgs/userHead.jpg").img-responsive.center-block
+								dd
+									a(href="#").useName 梦里听海
+									p
+										b.questionNum 113
+										s 个问题,
+										b.endorseNum 37
+										s 次赞同
+							dl
+								dt
+									a(href="#")
+										img(src="imgs/userHead.jpg").img-responsive.center-block
+								dd
+									a(href="#").useName 梦里听海
+									p
+										b.questionNum 113
+										s 个问题,
+										b.endorseNum 37
+										s 次赞同
+							dl
+								dt
+									a(href="#")
+										img(src="imgs/userHead.jpg").img-responsive.center-block
+								dd
+									a(href="#").useName 梦里听海
+									p
+										b.questionNum 113
+										s 个问题,
+										b.endorseNum 37
+										s 次赞同
+
+
+	//- footer信息
+	include footer

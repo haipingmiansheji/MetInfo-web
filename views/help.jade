@@ -1,0 +1,163 @@
+extends layout
+block content
+	.navbar.help-search.bg-primary
+		.container-fluid
+			.container
+				.collapse.navbar-collapse
+					form.navbar-form.navbar-left
+						.form-group
+							input(type="text" placeholder="搜索问题、话题或人").search
+							span.glyphicon.glyphicon-search
+	//- 问答内容
+	.container-fluid.bg-danger.help-problem
+		.container
+			.row
+				.help-center.text-center
+					h3
+						span.glyphicon.glyphicon-hourglass
+						b 帮助中心
+					.search-form
+						input(type="text" placeholder="搜索问题")
+						span.glyphicon.glyphicon-search
+				.all-problem
+					.col-lg-12
+						.col-sm-4
+							p 
+								a(href="#") 
+									span.glyphicon.glyphicon-off
+									b 新手建站必读
+							ul
+								li
+									a(href="#") 安装MetInfo
+								li
+									a(href="#") 网站建设需要的资料
+								li
+									a(href="#") 如何在网站上添加备案号？
+								li
+									a(href="#") 新手网站搭建教程
+								li
+									a(href="#") 如何本地安装MetInfo网站
+								li
+									a(href="#") 如何注册域名
+								li
+									a(href="#") 网站由哪些部分组成？
+								li
+									a(href="#") 如何选择合适的域名
+								li
+									a(href="#") 怎么操作解析绑定？
+								li
+									a(href="#") 怎样操作网站备案？
+								li
+									a(href="#") FTP是什么，怎么用？
+						.col-sm-4
+							p
+								a(href="#")
+									span.glyphicon.glyphicon-off
+									b 网站配置
+							ul
+								li
+									a(href="#") MetInfo 简易使用帮助在线文档
+								li
+									a(href="#") 网站基本信息设置
+								li
+									a(href="#") 如何设置网站栏目？
+								li
+									a(href="#") 怎么添加和管理多个语言网站？
+								li
+									a(href="#") 图片水印设置
+								li
+									a(href="#") 如何设置网站邮件发件箱
+								li
+									a(href="#") 网站外观设置（模板设置）
+								li
+									a(href="#") 如何设置手机网站？
+								li
+									a(href="#") 如何配置精美网站
+						.col-sm-4
+							p
+								a(href="#")
+									span.glyphicon.glyphicon-off
+									b 网站内容完善
+							ul
+								li
+									a(href="#") 自定义表单设置（反馈系统）
+								li
+									a(href="#") 产品管理与发布
+								li
+									a(href="#") 怎么用好内容编辑器？
+								li
+									a(href="#") 文章管理与发布
+					.col-lg-12
+						.col-sm-4
+							p
+								a(href="#")
+									span.glyphicon.glyphicon-off
+									b SEO优化设置
+							ul
+								li
+									a(href="#") URL静态化
+								li
+									a(href="#") 404页面设置
+								li
+									a(href="#") 站内锚文本链接设置
+								li
+									a(href="#") SEO科普知识集合
+								li
+									a(href="#") 301重定向
+								li
+									a(href="#") 如何生成网站地图（Sitemap）
+								li
+									a(href="#") 如何添加友情链接
+								li
+									a(href="#") 页面标题、关键词、简短描述设置
+								li
+									a(href="#") SEO是什么？
+						.col-sm-4
+							p
+								a(href="#")
+									span.glyphicon.glyphicon-off
+									b 网站运营推广
+							ul
+								li
+									a(href="#") 怎样插入百度统计代码？
+								li
+									a(href="#") CDN加速是什么？怎样免费获得CDN加速？
+								li
+									a(href="#") 怎样配置微官网？
+								li
+									a(href="#") 如何增强网站的安全性
+								li
+									a(href="#") 如何获取免费企业邮箱？
+								li
+									a(href="#") 怎样加入第三方客服功能？（百度商桥、美洽、53KF等）
+						.col-sm-4
+							p
+								a(href="#")
+									span.glyphicon.glyphicon-off
+									b MetInfo常见问题
+							ul
+								li
+									a(href="#") 如何修改模板颜色和字体？
+								li
+									a(href="#") 怎样找回后台密码？
+								li
+									a(href="#") MetInfo常见使用问题汇总贴
+								li
+									a(href="#") 开启伪静态后网站无法访问
+								li
+									a(href="#") 浏览器网址栏的小图标怎样替换成自己的LOGO？
+								li
+									a(href="#") 如何开启商城模块，实现在线支付
+								li
+									a(href="#") 如何更新模板，却不影响网站内容
+								li
+									a(href="#") MetInfo 5.3怎样安装模板
+								li
+									a(href="#") 图片无法上传
+								li
+									a(href="#") 网站后台管理员账号密码忘记了怎么办？
+								li
+									a(href="#") 在线交流QQ提示未启用
+
+	//- footer信息
+	include footer

@@ -1,0 +1,105 @@
+extends layout
+block content
+	.container-fluid.bg-primary.product-list
+		.container
+			.row
+				.col-md-12
+					.navbar.product-margin-bottom
+						.container-fluid
+							.navbar-header
+								a.navbar-brand(href="javascript:;" data-container="body" data-toggle="popover" data-placement="bottom" data-content="智能适应用户设备的屏幕尺寸「电脑、平板、手机、微官网」同样美好") 响应式网站
+									span.glyphicon.glyphicon-question-sign
+								a.navbar-brand(href="/") 手机网站
+								a.navbar-brand(href="/") 电脑网站
+								a(href="javascript:;" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false").navbar-brand
+									span.glyphicon.glyphicon-chevron-down
+								ul.dropdown-menu
+									li
+										dl
+											dt 按行业
+											dd
+												a(href="#") 全部
+												a(href="#") 外贸
+												a(href="#") 企业/公司
+												a(href="#") 政府/学校
+												a(href="#") 房产/建筑
+												a(href="#") 酒店/旅游
+												a(href="#") 婚庆/摄影
+												a(href="#") 金融/理财
+												a(href="#") 餐饮/咖啡
+												a(href="#") 物流/运输
+												a(href="#") 教育/培训
+												a(href="#") 药材/农产品
+												a(href="#") 印刷/生产
+												a(href="#") 医院/器械
+												a(href="#") 汽车/制造
+												a(href="#") 电子/设备
+												a(href="#") 家具/家电
+												a(href="#") 软件/互联网
+												a(href="#") 服务行业
+												a(href="#") 其他
+									li
+										dl
+											dt 按颜色
+											dd
+												a(href="#") 全部
+												a(href="#") 黑白系
+												a(href="#") 绿色系
+												a(href="#") 红色系
+												a(href="#") 蓝色系
+												a(href="#") 紫色系
+												a(href="#") 银色系
+												a(href="#") 橙色系
+									li
+										dl
+											dt 按价格
+											dd
+												a(href="#") 全部
+												a(href="#") 199元
+												a(href="#") 299元
+												a(href="#") 399元
+												span
+							.collapse.navbar-collapse
+								form.navbar-form.navbar-right.searchModle
+									.form-group
+										input(type="text" placeholder="Search").search
+										span.glyphicon.glyphicon-search
+				.col-md-6.webList
+					a(href="javascript:;")
+						img(src="imgs/1459819778.png").img-responsive.center-block
+				.col-md-6.webList
+					a(href="javascript:;")
+						img(src="imgs/1464855440.png").img-responsive.center-block
+				.col-md-6.webList
+					a(href="javascript:;")
+						img(src="imgs/1459819778.png").img-responsive.center-block
+				.col-md-6.webList
+					a(href="javascript:;")
+						img(src="imgs/1464855440.png").img-responsive.center-block
+				.col-md-6.webList
+					a(href="javascript:;")
+						img(src="imgs/1459819778.png").img-responsive.center-block
+				.col-md-6.webList
+					a(href="javascript:;")
+						img(src="imgs/1464855440.png").img-responsive.center-block
+				.col-md-6.webList
+					a(href="javascript:;")
+						img(src="imgs/1459819778.png").img-responsive.center-block
+				.col-md-6.webList
+					a(href="javascript:;")
+						img(src="imgs/1464855440.png").img-responsive.center-block
+				.col-md-6.webList
+					a(href="javascript:;")
+						img(src="imgs/1459819778.png").img-responsive.center-block
+				.col-md-6.webList
+					a(href="javascript:;")
+						img(src="imgs/1464855440.png").img-responsive.center-block
+	.container-fluid.page-num
+		.container
+			.row
+				.col-xs-12.text-center
+					#page
+					p 没有找到合适的网站模版？
+					a(href="javascript:;").btn.btn-primary.btn-lg 网站定制
+	//- footer信息
+	include footer
